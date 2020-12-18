@@ -1,0 +1,71 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #1F2833;
+    /* #116466 #123C69 #2E9CCA #3AAFA9 #173F5F #3CAEA3*/
+}
+.skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #215c77;
+    /* background-image: url("https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/thumbimg_37386290thumbejpg.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    /* border-bottom: 5px solid #117a8b; */
+    box-shadow: 1px 1px 5px 0px #1F2833;
+    z-index: 0;
+    transform: skewY(8deg);
+    transform-origin: top right;
+  }
+.rowposters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 200px;
+	padding: 20px;
+}
+.rowposters::-webkit-scrollbar{
+	display: none;
+}
+.rowposter{
+	object-fit: contain;
+    max-height: 200px;
+	margin: 8px;
+	transition: transform 450ms !important;
+}
+
+.rowposterimg{
+	object-fit: contain;
+    max-height: 200px;
+}
+
+.rowposter:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 0px 5px 0px #117a8b;
+	/*opacity: 1;*/
+}
+
+.moviecard{
+    box-shadow:  -5px 6px 17px 2px rgba(0,0,0,0.2), 0px 1px 0px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.search{
+    z-index: 12;
+    margin-top: 60px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
